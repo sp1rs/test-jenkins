@@ -1,2 +1,2 @@
-def   XYA():
-	print('sdf')
+def XYA():
+    print('sdf')
