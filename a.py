@@ -1,0 +1,2 @@
+def   XYA():
+	print('sdf')
