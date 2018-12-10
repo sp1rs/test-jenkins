@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="24" errors="24" failures="0" skip="0"><testcase classname="&lt;nose.suite" name="ContextSuite context=BaseViewTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestSeat&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=SequenceTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=CommonUtilsTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=CovermoreRequestTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=CovermoreProviderTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=CreditReceiversTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=FiloMainTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=FlightAddonUtilsTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestAncillaries&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestSeat&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=FlightUtils&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=GocashApiRouterTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=PaymentDetailsTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=InvoiceTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=PeshkashConvenienceFeeTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=PromoCodeHelperTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=PromotionFactoryTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestTicketingProfiler&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestTierBenefitsHelper&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=FlightInfoParserTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TourCodeParamParserTest&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestVoyager&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase><testcase classname="&lt;nose.suite" name="ContextSuite context=TestVoyagerApi&gt;:setup" time="0.000"><error type="django.db.utils.OperationalError" message="(1045, &quot;Access denied for user 'gouser'@'10.106.104.66' (using password: YES)&quot;)&#10;-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------&#10;faker.factory: DEBUG: Not in REPL -&gt; leaving logger event level as is.&#10;--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------"><![CDATA[  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 210, in run
+    self.setUp()
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 293, in setUp
+    self.setupContext(ancestor)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/suite.py", line 316, in setupContext
+    try_run(context, names)
+  File "/usr/local/python3/lib/python3.6/site-packages/nose/util.py", line 471, in try_run
+    return func()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 1005, in setUpClass
+    if not connections_support_transactions():
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in connections_support_transactions
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/test/testcases.py", line 970, in <genexpr>
+    return all(conn.features.supports_transactions for conn in connections.all())
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 101, in supports_transactions
+    return self._mysql_storage_engine != 'MyISAM'
+  File "/usr/local/python3/lib/python3.6/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/features.py", line 57, in _mysql_storage_engine
+    with self.connection.cursor() as cursor:
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 255, in cursor
+    return self._cursor()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 232, in _cursor
+    self.ensure_connection()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 216, in ensure_connection
+    self.connect()
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/base/base.py", line 194, in connect
+    self.connection = self.get_new_connection(conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/django/db/backends/mysql/base.py", line 227, in get_new_connection
+    return Database.connect(**conn_params)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/__init__.py", line 86, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/python3/lib/python3.6/site-packages/MySQLdb/connections.py", line 204, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+(1045, "Access denied for user 'gouser'@'10.106.104.66' (using password: YES)")
+-------------------- >> begin captured logging << --------------------
+faker.factory: DEBUG: Not in REPL -> leaving logger event level as is.
+--------------------- >> end captured logging << ---------------------]]></error></testcase></testsuite>
